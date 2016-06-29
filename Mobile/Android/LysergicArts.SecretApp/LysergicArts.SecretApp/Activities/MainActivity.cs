@@ -6,7 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace LysergicArts.SecretApp
+namespace LysergicArts.SecretApp.Activities
 {
     [Activity(Label = "LysergicArts.SecretApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
