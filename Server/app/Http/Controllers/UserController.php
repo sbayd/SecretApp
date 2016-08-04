@@ -86,7 +86,6 @@ class UserController extends Controller {
 		return Response::json([
 			'Success' => 'Successfully Logged In',
 			'user_name' => $user->name,
-			''
 		], 200);
 
 	}
