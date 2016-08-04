@@ -25,10 +25,22 @@ Route::get('/', function()
 
 });
 
-Route::group(array('prefix' => 'api/v1'), function()
+Route::group(['prefix' => 'api/v1'], function()
 {
+	Route::group(['prefix' => 'user'], function() {
+		Route::resource('/', 'UserController@all');
+		Route::post('login', 'UserController@login');
+	});
 
-	Route::resource('users', 'WelcomeController@index');
+	Route::resource('menu', 'MenuController@all');
+
+	Route::group(['prefix' => 'secret'], function() {
+		Route::resource('/', 'SecretController@all');
+	});
+
+	Route::resource('comment', 'CommentController@all');
+	Route::resource('refUniversity', 'RefUniversityController@all');
+	Route::resource('media', 'MediaController@all');
 
 
 });

@@ -6,7 +6,19 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateFacebookInformationsTable' => $baseDir . '/database/migrations/2016_07_21_203633_create_facebook_informations_table.php',
+    'CreateMenusTable' => $baseDir . '/database/migrations/2016_07_21_192017_create_menus_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreateRefUniversitiesTable' => $baseDir . '/database/migrations/2016_06_30_195715_create_ref_universities_table.php',
+    'CreateRefUserRolesTable' => $baseDir . '/database/migrations/2016_07_21_203449_create_ref_user_roles_table.php',
+    'CreateRefUserTypesTable' => $baseDir . '/database/migrations/2016_07_21_204317_create_ref_user_types_table.php',
+    'CreateSecretCommentDislikesTable' => $baseDir . '/database/migrations/2016_07_21_203431_create_secret_comment_dislikes_table.php',
+    'CreateSecretCommentLikesTable' => $baseDir . '/database/migrations/2016_07_21_203423_create_secret_comment_likes_table.php',
+    'CreateSecretCommentsTable' => $baseDir . '/database/migrations/2016_07_21_203417_create_secret_comments_table.php',
+    'CreateSecretDislikesTable' => $baseDir . '/database/migrations/2016_07_21_203405_create_secret_dislikes_table.php',
+    'CreateSecretLikesTable' => $baseDir . '/database/migrations/2016_07_21_203356_create_secret_likes_table.php',
+    'CreateSecretsTable' => $baseDir . '/database/migrations/2016_06_30_194845_create_secrets_table.php',
+    'CreateUserTokensTable' => $baseDir . '/database/migrations/2016_07_21_203338_create_user_tokens_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/File/Iterator.php',

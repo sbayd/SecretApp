@@ -210,7 +210,19 @@ class ComposerStaticInit17600b46526e825f50fb60f4377b4c3a
     );
 
     public static $classMap = array (
+        'CreateFacebookInformationsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203633_create_facebook_informations_table.php',
+        'CreateMenusTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_192017_create_menus_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateRefUniversitiesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_30_195715_create_ref_universities_table.php',
+        'CreateRefUserRolesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203449_create_ref_user_roles_table.php',
+        'CreateRefUserTypesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_204317_create_ref_user_types_table.php',
+        'CreateSecretCommentDislikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203431_create_secret_comment_dislikes_table.php',
+        'CreateSecretCommentLikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203423_create_secret_comment_likes_table.php',
+        'CreateSecretCommentsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203417_create_secret_comments_table.php',
+        'CreateSecretDislikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203405_create_secret_dislikes_table.php',
+        'CreateSecretLikesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203356_create_secret_likes_table.php',
+        'CreateSecretsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_30_194845_create_secrets_table.php',
+        'CreateUserTokensTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_21_203338_create_user_tokens_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/File/Iterator.php',
