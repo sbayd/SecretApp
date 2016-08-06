@@ -13,11 +13,25 @@ class SecretController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function all() {
+	public function all(Request $request) {
 
-		$secrets = Secret::all();
+		$secret_page_number = $request->secret_page_number;
 
-		return Response::json( $secrets );
+		if ( $secret_page_number < 1 ) {
+			return Response::json([
+				'Error' => 'faulty return_coef value'
+			], 404);
+		}
+
+		$takeValue = intval( env('PAGE_SECRET_COUNT', 10) );
+		$skipValue = ( $secret_page_number - 1 ) * $takeValue;
+
+		$secrets = Secret::skip($skipValue)->take( $takeValue )->get();
+
+		return Response::json([
+			'Success' => 'Success',
+			'Secrets' => $secrets
+		], 200);
 	}
 
 	/**
